@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"/>
+<html>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <script src="js/game-state.js"></script>
+    <script src="js/resource-utils.js"></script>
+    <script src="js/main.js" defer></script>
+    <title>Jogo da miaumória</title>
+<body>
+    <div id="top-div">
+        <header id="gametitle">Jogo da miaumória</header>
+    </div>
+    <div id="main-menu-div">
+        <button id="startgamebutton" onclick="startGame()">Iniciar jogo</button>
+        <select id="difficultyselect">
+            <option value="easy">Fácil</option>
+            <option value="medium">Médio</option>
+            <option value="hard">Difícil</option>
+          </select>
+    </div>
+    <div id = "game-div" hidden>
+    </div>
+    <div id = "game-menu-div" hidden>
+        <header id="game-timer-header"></header>
+        <button id="go-to-main-menu-button" onclick="goBackToMainMenu()">Voltar ao menu principal</button>
+    </div>
+</div>
+</body>
+</html>
